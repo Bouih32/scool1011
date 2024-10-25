@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            poppins: ["Poppins", "sans-serif"],
+          },
+          extend: {
+            colors: {
+              main: "#07689F",
+              secondary: "#565656",
+              mainBg: "#F9F9F9",
+            },
+          },
+        },
+      };
+    </script>
+    <title>EasySet</title>
+  </head>
+  <body class="font-poppins bg-mainBg">
+    <main class="px-[108px]">
+      <header class="flex items-center justify-between mt-6">
+        <img src="/images/Logo.png" alt="logo" />
+        <div
+          class="w-[568px] px-4 flex justify-between items-center border rounded-sm border-[#D9D9D9] py-2"
+        >
+          <input type="text" class="flex-1 outline-none" />
+          <img src="/images/search.png" alt="search" />
+        </div>
+        <div class="flex items-center">
+          <img src="/images/country.png" alt="country" />
+          <img src="/images/question.png" alt="faq" />
+          <img src="/images/heart.png" alt="heart" />
+          <img src="/images/phone.png" alt="phone" />
+          <div class="flex items-center justify-center gap-[8px] ml-4">
+            <img src="/images/profile.png" alt="profile" />
+            <div class="">
+              <p
+                class="font-extrabold text-[#043E5F] text-[14px] leading-[19.6px]"
+              >
+                Your Account
+              </p>
+              <p class="text-[12px] text-[#07689F] leading-[16.8px]">
+                Anna Carinna
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="flex gap-4 justify-center items-center mt-10">
+        <div
+          class="border border-[#A6A6A6] hover:bg-main hover:text-white rounded-[30px] w-[121.33px] text-center text-[16px] leading-[22.4px] py-2 text-[#A6A6A6]"
+        >
+          Trip
+        </div>
+        <span
+          class="border border-[#A6A6A6] hover:bg-main hover:text-white rounded-[30px] w-[121.33px] text-center text-[16px] leading-[22.4px] py-2 text-[#A6A6A6]"
+          >%Deals</span
+        >
+        <span
+          class="border border-[#A6A6A6] hover:bg-main hover:text-white rounded-[30px] w-[121.33px] text-center text-[16px] leading-[22.4px] py-2 text-[#A6A6A6]"
+          >Hotel</span
+        >
+        <span
+          class="border border-[#A6A6A6] hover:bg-main hover:text-white rounded-[30px] w-[121.33px] text-center text-[16px] leading-[22.4px] py-2 text-[#A6A6A6]"
+          >Flight</span
+        >
+        <span
+          class="border border-[#A6A6A6] hover:bg-main hover:text-white rounded-[30px] w-[121.33px] text-center text-[16px] leading-[22.4px] py-2 text-[#A6A6A6]"
+          >Apartment</span
+        >
+        <span
+          class="border border-[#A6A6A6] hover:bg-main hover:text-white rounded-[30px] w-[121.33px] text-center text-[16px] leading-[22.4px] py-2 text-[#A6A6A6]"
+          >Camper</span
+        >
+      </section>
+      <section class="mt-10 text-main">
+        <h1 class="font-bold mb-1 text-[24px] leading-[33.6px]">
+          Where is your Next Dream Place?
+        </h1>
+        <p class="text-[14px] leading-[21px]">
+          Find exclusive Genius rewards in every corner of the world!
+        </p>
+      </section>
+
+      <section class="mt-[56px] flex justify-between">
+        <section class="space-y-4">
+          <h2 class="text-secondary text-[33.6px] leading-[33.6px] font-bold">
+            Filter By
+          </h2>
+          <div class="">
+            <h4 class="mb-2 text-[16px] leading-[24px] font-semibold">
+              Popular filters
+            </h4>
+            <section
+              class="text-[12px] leading-[18px] text-secondary space-y-1"
+            >
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="checkbox"
+                  name="breakfast"
+                  id="breakfast"
+                  class="accent-main"
+                />
+                <label for="breakfast">Breakfast included</label>
+              </div>
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="checkbox"
+                  name="all"
+                  id="all"
+                  class="accent-main"
+                />
+                <label for="all">All-inclusive</label>
+              </div>
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="checkbox"
+                  name="free"
+                  id="free"
+                  class="accent-main"
+                />
+                <label for="free">Free Cancellation</label>
+              </div>
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="checkbox"
+                  name="pool"
+                  id="pool"
+                  class="accent-main"
+                />
+                <label for="pool">Pool</label>
+              </div>
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="checkbox"
+                  name="pet"
+                  id="pet"
+                  class="accent-main"
+                />
+                <label for="pet">Pet friendly</label>
+              </div>
+            </section>
+          </div>
+          <div class="mt-4">
+            <h4 class="mb-2 text-[16px] leading-[24px] font-semibold">
+              Accommodation classification
+            </h4>
+            <section
+              class="text-[12px] leading-[18px] text-secondary space-y-1"
+            >
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="radio"
+                  name="stars"
+                  id="5stars"
+                  class="accent-main"
+                />
+                <label for="5stars">5 Stars</label>
+              </div>
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="radio"
+                  name="stars"
+                  id="4stars"
+                  class="accent-main"
+                />
+                <label for="4stars">4 Stars</label>
+              </div>
+              <div class="space-x-2 flex justify-start items-center">
+                <input
+                  type="radio"
+                  name="stars"
+                  id="3stars"
+                  class="accent-main"
+                />
+                <label for="3stars">3 Stars</label>
+              </div>
+            </section>
+          </div>
+        </section>
+        <section class="">
+          <div
+            class="border border-[#D9D9D9] w-[849px] p-2 flex gap-6 rounded-[8px]"
+          >
+            <div
+              class="w-[200px] h-[200px] rounded-l-sm overflow-hidden relative"
+            >
+              <img
+                src="/images/main1.jpg"
+                alt="property"
+                class="h-full w-full"
+              />
+
+              <img
+                src="/images/heart2.png"
+                alt="heart"
+                class="absolute top-[16px] left-[16px]"
+              />
+              <div
+                class="absolute bottom-[8px] px-2 w-full flex justify-between"
+              >
+                <div class="flex">
+                  <img src="/images/sun-one.png" alt="star" />
+                  <img src="/images/sun-one.png" alt="star" />
+                  <img src="/images/sun-one.png" alt="star" />
+                  <img src="/images/sun-one.png" alt="star" />
+                </div>
+                <span
+                  class="text-[10px] text-white leading-[14px] font-bold border border-white rounded-sm opacity-50 p-[2px]"
+                  >8,2</span
+                >
+              </div>
+            </div>
+            <section class="flex justify-between">
+              <div class="">
+                <h3>Radisson Blu</h3>
+                <div class="flex justify-start items-center gap-2">
+                  <img src="/images/ocal.png" alt="local" />
+                  <p class="text-[12px] leading-[16.8px] text-secondary">
+                    Located In Downton, 500m Distance to Shore
+                  </p>
+                </div>
+                <div class="flex justify-start items-center gap-2">
+                  <img src="/images/cup.png" alt="cup" />
+                  <p class="text-[12px] leading-[16.8px] text-secondary">
+                    Breakfast Included
+                  </p>
+                </div>
+
+                <div class="">
+                  <div class="flex justify-start items-center gap-2">
+                    <img src="/images/cup.png" alt="cup" />
+                    <p
+                      class="text-[12px] font-bold leading-[16.8px] text-secondary"
+                    >
+                      Breakfast Included
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class=""></div>
+            </section>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
